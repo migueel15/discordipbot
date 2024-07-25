@@ -18,3 +18,7 @@ jobs:
     - name: docker build bot
       run: |
         docker build . -t migueel15/discordipbot:latest
+
+    - name: docker push
+      run: |
+        docker push migueel15/discordipbot:latest
