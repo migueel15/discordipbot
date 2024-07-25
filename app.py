@@ -1,5 +1,4 @@
 import os
-import random
 
 import discord
 import requests
@@ -21,11 +20,11 @@ async def change_status():
 
 @bot.event
 async def on_ready():
-    change_status.start()
     print('Bot is ready')
+    change_status.start()
 
 
-print('Starting bot...')
+print('Starting bot..')
 if BOT_TOKEN:
     bot.run(BOT_TOKEN)
 else:
