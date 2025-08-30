@@ -14,7 +14,7 @@ def get_ip():
 
 @tasks.loop(minutes=10)
 async def change_status():
-    print("Checking for IP change...")
+    print("Checking for IP change..")
     ip = get_ip()
     await bot.change_presence(activity=discord.Game(name=ip))
 
